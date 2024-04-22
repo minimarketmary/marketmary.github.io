@@ -1,0 +1,50 @@
+#imageContainerAboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Styles pour les éléments du carrousel */
+.carousel-item {
+    width: 60%;
+    aspect-ratio: 2/1;
+}
+
+/* Styles pour le bouton gauche du carrousel */
+#carousel-bouton-gauche {
+    display: none;
+    position: relative;
+    left: -1%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    width: 6%;
+    aspect-ratio: 1/1;
+}
+
+/* Styles pour le bouton droit du carrousel */
+#carousel-bouton-droite {
+    position: relative;
+    left: 5%;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    width: 6%;
+    aspect-ratio: 1/1;
+
+}
+
+/* Styles pour les écrans de petite taille (largeur maximale de 800px) */
+@media screen and (max-width: 800px) {
+    .carousel-item {
+        width: 80%;
+    }
+
+    #carousel-bouton-droite {
+        left: 94%;
+    }
+
+    #carousel-bouton-gauche {
+        left: 5%;
+    }
+}
