@@ -7,6 +7,7 @@ const pagina = {
         stringhe:  ["Alimentari","Salumi","Panini", "Snack", "Bevande", "Prodotti esteri"],
         titoloFar: "Il mini-market",
         titoloFar2: "Dove siamo",
+        prodottiEsteri: "Prodotti Esteri" ,
         ubi: "Ubicazione geografica",
         orari: "Orari di apertura",
         giorni: ["Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato"],
@@ -23,6 +24,7 @@ const pagina = {
         stringhe: ["Food","Meat","Sandwiches", "Snacks","Drinks", "Foreign Products"],
         titoloFar: "The market",
         titoloFar2: "Where you can find us",
+        prodottiEsteri: "Foreign Products" ,
         ubi: "Location",
         orari: "Opening time",
         giorni: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
@@ -39,6 +41,7 @@ const pagina = {
         stringhe: ["Еда","Мясо","Сэндвичи", "Закуски","Напитки", "Зарубежной продукции"],
         titoloFar: "О магазине",
         titoloFar2: "Где мы",
+        prodottiEsteri: "Зарубежной продукции" ,
         ubi: "Расположение магазина",
         orari: "Время открытия",
         giorni: ["Понедельник","Вторник","Среда","Четверг","Пятница","Суббота"],
@@ -55,6 +58,7 @@ const pagina = {
         stringhe: ["Їжа","М'ясо","Сендвічі", "Закуски","Напої", "Зарубіжної продукції"],
         titoloFar: "Про магазину",
         titoloFar2: "Де ми",
+        prodottiEsteri: "Зарубіжної продукції" ,
         ubi: "Розташування магазину",
         orari: "Час відкриття",
         giorni: ["Понеділок","Вівторок","Середа","Четвер","П'ятниця","Субота"],
@@ -93,8 +97,10 @@ function changeLanguage(language) {
         typed.strings = languageJSON.stringhe;
         document.getElementById("chiSiamo").innerText = languageJSON.chiSiamo;
         document.getElementById("doveSiamo").innerText = languageJSON.doveTrovarci;
+        document.getElementById("prodottiEsteri").innerText = languageJSON.prodottiEsteri;
         document.getElementById("chiSiamo2").innerText = languageJSON.chiSiamo;
         document.getElementById("doveSiamo2").innerText = languageJSON.doveTrovarci;
+        document.getElementById("prodottiEsteri2").innerText = languageJSON.prodottiEsteri;
         document.getElementById("titoloFar").innerText = languageJSON.titoloFar;
         document.querySelector(".titoloFar2").innerText = languageJSON.titoloFar2;
         document.getElementById("orari-title").innerText = languageJSON.orari;

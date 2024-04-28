@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="storia.css">
+    <title>Prodotti Esteri</title>
+</head>
+<body>
+        <ul class="languages">
+            <li class="lang22" id="italy"><img style="width: 55px; height:33px;" src="../images/italy.png"></li>
+            <li class="lang22" id="english"><img style="width: 55px; height:33px;" src="../images/england.png"></li>
+            <li class="lang22" id="russian"><img style="width: 55px; height:33px;" src="../images/russia.png"></li>
+            <li class="lang22" id="ukrainian"><img style="width: 55px; height:33px;" src="../images/ukr.png"></li>
+        </ul>
+        <div class="logo-phone-container">
+            <a id="logo-phone" href="../index.html"><img id="logo-image" src="../images/logo.png"></a>
+        </div>
+        <div class="toggle-button-container">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+        </div>
+        <div class="dropdown-mobile">
+            <div class="container-nav-1-mob"><a class="nav-mob" href="../index.html" id="chiSiamo2">Home</a></div>
+            <div class="container-nav-2-mob"><a class="nav-mob"   href="../index.html#titoloFar" id="doveSiamo2">Chi siamo</a></div>
+            <div class="container-nav-3-mob"><a  class="nav-mob"  href="../index.html#locLink" id="storia2">Dove trovarci</a></div>
+        </div>
+        <div class="container-navbar">
+            <a id="logo" href="../index.html"><img id="logo-image" src="../images/logo.png"></a>
+            <div class="container-nav-1"><a class="nav" href="../index.html" id="chiSiamo">Home</a></div>
+            <div class="container-nav-2"><a class="nav" href="../index.html#titoloFar" id="doveSiamo">Chi siamo</a></div>
+            <div class="container-nav-3"><a class="nav" href="../index.html#locLink" id="storia">Dove trovarci</a></div>
+        </div>
+        <p id="story-text">
+
+        </p>
+        <div class="slides-wrapper">
+            <div class="slides">
+                <div class="slide slide-1">
+                    <img src="../foto/img1.jpeg" alt="">
+                </div>
+                <div class="slide slide-2">
+                    <img src="../foto/img2.jpeg" alt="">
+                </div>
+                <div class="slide slide-3">
+                    <img src="../foto/img3.jpeg" alt="">
+                </div>
+                <div class="slide slide-4">
+                    <img src="../foto/img4.jpeg" alt="">
+                </div>
+                <div class="slide slide-5">
+                    <img src="../foto/img5.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <script src="storia_trad.js"></script>
+        <script>
+            const italianButton = document.getElementById("italy");
+            italianButton.addEventListener("click", handleClickItalian);
+            function handleClickItalian() {
+                document.getElementById("chiSiamo").innerText = pagina.italiano.home;
+                document.getElementById("chiSiamo2").innerText = pagina.italiano.home;
+                document.getElementById("doveSiamo").innerText = pagina.italiano.chiSiamo;
+                document.getElementById("doveSiamo2").innerText = pagina.italiano.chiSiamo;
+                document.getElementById("storia").innerText = pagina.italiano.doveTrovarci;
+                document.getElementById("storia2").innerText = pagina.italiano.doveTrovarci;
+                document.getElementById("servizi").innerText = pagina.italiano.servizi;
+                document.getElementById("servizi2").innerText = pagina.italiano.servizi;
+            }
+            const englishButton = document.getElementById("english");
+            englishButton.addEventListener("click", handleClickEnglish);
+            function handleClickEnglish() {
+                document.getElementById("chiSiamo").innerText = pagina.inglese.home;
+                document.getElementById("chiSiamo2").innerText = pagina.inglese.home;
+                document.getElementById("doveSiamo").innerText = pagina.inglese.chiSiamo;
+                document.getElementById("doveSiamo2").innerText = pagina.inglese.chiSiamo;
+                document.getElementById("storia").innerText = pagina.inglese.doveTrovarci;
+                document.getElementById("storia2").innerText = pagina.inglese.doveTrovarci;
+                document.getElementById("servizi").innerText = pagina.inglese.servizi;
+                document.getElementById("servizi2").innerText = pagina.inglese.servizi;
+            }
+            const russianButton = document.getElementById("russian");
+            russianButton.addEventListener("click", handleClickRussian);
+            function handleClickRussian() {
+                document.getElementById("chiSiamo").innerText = pagina.russo.home;
+                document.getElementById("chiSiamo2").innerText = pagina.russo.home;
+                document.getElementById("doveSiamo").innerText = pagina.russo.chiSiamo;
+                document.getElementById("doveSiamo2").innerText = pagina.russo.chiSiamo;
+                document.getElementById("storia").innerText = pagina.russo.doveTrovarci;
+                document.getElementById("storia2").innerText = pagina.russo.doveTrovarci;
+                document.getElementById("servizi").innerText = pagina.russo.servizi;
+                document.getElementById("servizi2").innerText = pagina.russo.servizi;
+            }
+            const ukrainianButton = document.getElementById("ukrainian");
+            ukrainianButton.addEventListener("click", handleClickUkrainian);
+            function handleClickUkrainian() {
+                document.getElementById("chiSiamo").innerText = pagina.ucraino.home;
+                document.getElementById("chiSiamo2").innerText = pagina.ucraino.home;
+                document.getElementById("doveSiamo").innerText = pagina.ucraino.chiSiamo;
+                document.getElementById("doveSiamo2").innerText = pagina.ucraino.chiSiamo;
+                document.getElementById("storia").innerText = pagina.ucraino.doveTrovarci;
+                document.getElementById("storia2").innerText = pagina.ucraino.doveTrovarci;
+                document.getElementById("servizi").innerText = pagina.ucraino.servizi;
+                document.getElementById("servizi2").innerText = pagina.ucraino.servizi;
+            }
+        </script>
+</body>
+</html>
