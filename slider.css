@@ -8,7 +8,7 @@
 
 /* Styles pour les éléments du carrousel */
 .carousel-item {
-    width: 60%;
+    width: 80%;
     aspect-ratio: 2/1;
 }
 
@@ -46,5 +46,11 @@
 
 	#carousel-bouton-droite {
 		transform: translate(-50%, 0%);		
+	}
+}
+
+@media (max-width: 800px) {
+	.carousel-item {		
+		aspect-ratio: 1.4/1;
 	}
 }

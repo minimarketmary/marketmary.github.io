@@ -9,32 +9,35 @@
 </head>
 <body>
         <ul class="languages">
-            <li class="lang22" id="italy"><img style="width: 55px; height:33px;" src="../images/italy.png"></li>
-            <li class="lang22" id="english"><img style="width: 55px; height:33px;" src="../images/england.png"></li>
-            <li class="lang22" id="russian"><img style="width: 55px; height:33px;" src="../images/russia.png"></li>
-            <li class="lang22" id="ukrainian"><img style="width: 55px; height:33px;" src="../images/ukr.png"></li>
+            <li class="lang22" id="italy"><img class="bordered" style="width: 55px; height:33px;" src="../images/italy.png"></li>
+            <li class="lang22" id="english"><img class="bordered" style="width: 55px; height:33px;" src="../images/england.png"></li>
+            <li class="lang22" id="russian"><img class="bordered" style="width: 55px; height:33px;" src="../images/russia.png"></li>
+            <li class="lang22" id="ukrainian"><img class="bordered" style="width: 55px; height:33px;" src="../images/ukr.png"></li>
         </ul>
         <div class="logo-phone-container">
             <a id="logo-phone" href="../index.html"><img id="logo-image" src="../images/logo.png"></a>
         </div>
-        <div class="toggle-button-container">
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-        </div>
-        <div class="dropdown-mobile">
-            <div class="container-nav-1-mob"><a class="nav-mob" href="../index.html" id="chiSiamo2">Home</a></div>
-            <div class="container-nav-2-mob"><a class="nav-mob"   href="../index.html#titoloFar" id="doveSiamo2">Chi siamo</a></div>
-            <div class="container-nav-3-mob"><a  class="nav-mob"  href="../index.html#locLink" id="storia2">Dove trovarci</a></div>
-        </div>
+		<div id="small-nav">
+			<div class="toggle-button-container">
+				<a href="#" class="toggle-button">
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</a>
+			</div>
+			<div class="dropdown-mobile">
+				<div class="container-nav-1-mob"><a class="nav-mob" href="../index.html" id="chiSiamo2">Home</a></div>
+				<div class="container-nav-2-mob"><a class="nav-mob"   href="../index.html#titoloFar" id="doveSiamo2">Chi siamo</a></div>
+				<div class="container-nav-3-mob"><a  class="nav-mob"  href="../index.html#locLink" id="storia2">Dove trovarci</a></div>
+			</div>
+		</div>
         <div class="container-navbar">
             <a id="logo" href="../index.html"><img id="logo-image" src="../images/logo.png"></a>
             <div class="container-nav-1"><a class="nav" href="../index.html" id="chiSiamo">Home</a></div>
             <div class="container-nav-2"><a class="nav" href="../index.html#titoloFar" id="doveSiamo">Chi siamo</a></div>
             <div class="container-nav-3"><a class="nav" href="../index.html#locLink" id="storia">Dove trovarci</a></div>
         </div>
+		<h1 id="prodotti-esteri-titolo">Prodotti Esteri</h1>
         <p id="story-text">
             Il nostro negozio è uno dei pochissimi che ha tra i suoi prodotti anche merci provenienti da paesi esteri. Offriamo prodotti provenienti da: Romania, Polonia, Ucraina, Moldavia e altri ancora. Specialità non facilmente reperibili qui in Italia che sicuramente vale la pena di provare, anche solo una volta per semplice curiosità. I cibi del mondo sono alla vostra portata qui da Minimarket da Mary.
         </p>
@@ -69,8 +72,7 @@
                 document.getElementById("doveSiamo2").innerText = pagina.italiano.chiSiamo;
                 document.getElementById("storia").innerText = pagina.italiano.doveTrovarci;
                 document.getElementById("storia2").innerText = pagina.italiano.doveTrovarci;
-                document.getElementById("servizi").innerText = pagina.italiano.servizi;
-                document.getElementById("servizi2").innerText = pagina.italiano.servizi;
+                document.getElementById("prodotti-esteri-titolo").innerText = pagina.italiano.prodottiEsteri;
             }
             const englishButton = document.getElementById("english");
             englishButton.addEventListener("click", handleClickEnglish);
@@ -82,8 +84,7 @@
                 document.getElementById("doveSiamo2").innerText = pagina.inglese.chiSiamo;
                 document.getElementById("storia").innerText = pagina.inglese.doveTrovarci;
                 document.getElementById("storia2").innerText = pagina.inglese.doveTrovarci;
-                document.getElementById("servizi").innerText = pagina.inglese.servizi;
-                document.getElementById("servizi2").innerText = pagina.inglese.servizi;
+                document.getElementById("prodotti-esteri-titolo").innerText = pagina.inglese.prodottiEsteri;
             }
             const russianButton = document.getElementById("russian");
             russianButton.addEventListener("click", handleClickRussian);
@@ -95,8 +96,7 @@
                 document.getElementById("doveSiamo2").innerText = pagina.russo.chiSiamo;
                 document.getElementById("storia").innerText = pagina.russo.doveTrovarci;
                 document.getElementById("storia2").innerText = pagina.russo.doveTrovarci;
-                document.getElementById("servizi").innerText = pagina.russo.servizi;
-                document.getElementById("servizi2").innerText = pagina.russo.servizi;
+                document.getElementById("prodotti-esteri-titolo").innerText = pagina.russo.prodottiEsteri;
             }
             const ukrainianButton = document.getElementById("ukrainian");
             ukrainianButton.addEventListener("click", handleClickUkrainian);
@@ -108,8 +108,7 @@
                 document.getElementById("doveSiamo2").innerText = pagina.ucraino.chiSiamo;
                 document.getElementById("storia").innerText = pagina.ucraino.doveTrovarci;
                 document.getElementById("storia2").innerText = pagina.ucraino.doveTrovarci;
-                document.getElementById("servizi").innerText = pagina.ucraino.servizi;
-                document.getElementById("servizi2").innerText = pagina.ucraino.servizi;
+                document.getElementById("prodotti-esteri-titolo").innerText = pagina.ucraino.prodottiEsteri;
             }
             // Javascript per il menu mobile responsivo.
             const toggle = document.querySelector(".toggle-button");
