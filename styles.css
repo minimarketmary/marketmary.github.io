@@ -1,23 +1,29 @@
-body {
+html, body {
     animation: transitionIn 1s;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Ensure no horizontal overflow */
+    width: 100%;        /* Ensure full body width */
 }
 
-.container-navbar{
-    margin-bottom:30px;
-    display:grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
-    grid-gap: 25px;
+.container-navbar {
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr; /* 5 columns */
+    grid-gap: 25px;                           /* Space between columns */
+    padding-left: 2vw;
+    padding-right: 2vw;
+    align-items: center;                      /* Center elements vertically */
 }
 
 img#logo-image{
     display:inline;
-    width: 383px;
-    height: 121px;
+    width: 350px;
+    height: 100px;
 }
 
 .nav {
     font-size: 150%;
-    margin-top:70px;
     position:relative;
     display:inline-block;
 }
@@ -54,6 +60,8 @@ img#logo-image{
     background-size:cover;
     background-position:center;
     z-index: 1;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 .container {
@@ -106,7 +114,7 @@ img#logo-image{
 
 #titoloFar {
     color:#3C922F;
-    font-size: 5rem;
+    font-size: 4rem;
     font-family: Saira Condensed;
     font-weight: 900;
     margin-right: 2rem;
@@ -172,6 +180,8 @@ img#logo-image{
     width:100%;
     background-color:black;
     margin-top: 50px;
+	margin-left: 0px;
+	margin-right: 0px;
 }
 
 #ciao {
@@ -198,6 +208,12 @@ img#logo-image{
     display: flex;
     align-items: center;
     justify-content: center;
+	text-align: center;
+	text-shadow:
+		-0.5px -0.5px 0 black,  /* Top-left shadow */
+		0.5px -0.5px 0 black,   /* Top-right shadow */
+		-0.5px 0.5px 0 black,   /* Bottom-left shadow */
+		0.5px 0.5px 0 black;    /* Bottom-right shadow */
 }
 
 .container-dyntext h1{
@@ -253,13 +269,19 @@ img#logo-image{
 }
 
 .languages {
+	margin: 9.3px 0px 0px 0px;
     list-style-type: none;
     display: flex;
-    justify-content: flex-end;
+	justify-content: center;
 }
 .languages li {
     margin-left: 20px;
     margin-right:20px;
+}
+
+#small-nav {
+    border-top: 1.5px solid black;	
+    border-bottom: 0.3px solid black;
 }
 
 .toggle-button {
@@ -269,8 +291,8 @@ img#logo-image{
     flex-direction: column;
     justify-content: space-between;
     width:40px;
-    padding-bottom: 40px;
-    padding-top: 40px;
+    padding-bottom: 25px;
+    padding-top: 25px;
     height:31px;
 }
 
@@ -279,8 +301,6 @@ img#logo-image{
     justify-content: center;
     align-content: center;
     background-color: #3C922F;
-
-
 }
 
 .toggle-button-container:hover {
@@ -294,6 +314,11 @@ img#logo-image{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.nav{
+	font-size: 1.9rem;
+	text-align: center;
 }
 
 .nav-mob {
@@ -349,6 +374,7 @@ img#logo-image{
     }   
     .auto-type {
         font-size: 50px;
+		text-align: center;
     }
     #immagine-container{
         background-position: -20px;
@@ -421,4 +447,39 @@ img#logo-image{
     .titoloFar2 {
         display: none;
     }
+}
+
+.image-flex-container {
+    display: flex;                 /* Use flexbox */
+    flex-direction: row;           /* Arrange elements in a row */
+    justify-content: center;       /* Center items horizontally */
+    align-items: center;           /* Align items vertically */
+    width: 100%;                   /* Container width to match body */
+    height: auto;                  /* Flexible height */
+    gap: 10px;                      /* Space between items */
+    padding: 0;                     /* No extra padding */
+    margin: 20px 0;                 /* Top and bottom margin */
+}
+
+.flex-item {
+    width: 45vw;                    /* 45% of viewport width for each item */
+    height: 300px;                   /* Fixed height for consistent appearance */
+    object-fit: cover;               /* Ensure image covers the entire space */
+}
+
+.bordered{
+    border: 2px solid #3C922F;      /* Border color */		
+}
+
+#story-text{
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#carousel-bouton-droite{
+    cursor: pointer;
+}
+
+.lang22{	
+    cursor: pointer;
 }
