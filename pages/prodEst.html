@@ -36,7 +36,7 @@
             <div class="container-nav-3"><a class="nav" href="../index.html#locLink" id="storia">Dove trovarci</a></div>
         </div>
         <p id="story-text">
-
+            Il nostro negozio è uno dei pochissimi che ha tra i suoi prodotti anche merci provenienti da paesi esteri. Offriamo prodotti provenienti da: Romania, Polonia, Ucraina, Moldavia e altri ancora. Specialità non facilmente reperibili qui in Italia che sicuramente vale la pena di provare, anche solo una volta per semplice curiosità. I cibi del mondo sono alla vostra portata qui da Minimarket da Mary.
         </p>
         <div class="slides-wrapper">
             <div class="slides">
@@ -62,6 +62,7 @@
             const italianButton = document.getElementById("italy");
             italianButton.addEventListener("click", handleClickItalian);
             function handleClickItalian() {
+                document.getElementById("story-text").innerText = pagina.italiano.prodottiEsteri2;
                 document.getElementById("chiSiamo").innerText = pagina.italiano.home;
                 document.getElementById("chiSiamo2").innerText = pagina.italiano.home;
                 document.getElementById("doveSiamo").innerText = pagina.italiano.chiSiamo;
@@ -74,6 +75,7 @@
             const englishButton = document.getElementById("english");
             englishButton.addEventListener("click", handleClickEnglish);
             function handleClickEnglish() {
+                document.getElementById("story-text").innerText = pagina.inglese.prodottiEsteri2;
                 document.getElementById("chiSiamo").innerText = pagina.inglese.home;
                 document.getElementById("chiSiamo2").innerText = pagina.inglese.home;
                 document.getElementById("doveSiamo").innerText = pagina.inglese.chiSiamo;
@@ -86,6 +88,7 @@
             const russianButton = document.getElementById("russian");
             russianButton.addEventListener("click", handleClickRussian);
             function handleClickRussian() {
+                document.getElementById("story-text").innerText = pagina.russo.prodottiEsteri2;
                 document.getElementById("chiSiamo").innerText = pagina.russo.home;
                 document.getElementById("chiSiamo2").innerText = pagina.russo.home;
                 document.getElementById("doveSiamo").innerText = pagina.russo.chiSiamo;
@@ -98,6 +101,7 @@
             const ukrainianButton = document.getElementById("ukrainian");
             ukrainianButton.addEventListener("click", handleClickUkrainian);
             function handleClickUkrainian() {
+                document.getElementById("story-text").innerText = pagina.ucraino.prodottiEsteri2;
                 document.getElementById("chiSiamo").innerText = pagina.ucraino.home;
                 document.getElementById("chiSiamo2").innerText = pagina.ucraino.home;
                 document.getElementById("doveSiamo").innerText = pagina.ucraino.chiSiamo;
@@ -106,6 +110,20 @@
                 document.getElementById("storia2").innerText = pagina.ucraino.doveTrovarci;
                 document.getElementById("servizi").innerText = pagina.ucraino.servizi;
                 document.getElementById("servizi2").innerText = pagina.ucraino.servizi;
+            }
+            // Javascript per il menu mobile responsivo.
+            const toggle = document.querySelector(".toggle-button");
+            const dropdown = document.querySelector(".dropdown-mobile");
+            toggle.addEventListener("click", handleClickMenu);
+            let menu= false ;
+            function handleClickMenu() {
+                if (menu) {
+                    dropdown.style["display"] = "none";
+                    menu = false;
+                } else {
+                    dropdown.style["display"] = "flex";
+                    menu = true;
+                }
             }
         </script>
 </body>

@@ -15,7 +15,8 @@ const pagina = {
         telefonoFooter: "Recapito telefonico",
         emailFooter: "Email",
         socialMediaFooter: "Social media",
-        aboutUs: "Mini Market è una piccola attività locale situata nel cuore della bellissima Sorrento. Il negozio è gestito da uno staff diligente che mette al primo posto il cliente, dando la priorità alla qualità dei prodotti e alla convenienza dei prezzi. Abbiamo una larga scelta di prodotti, tra bevande durante le più calde giornate estive oppure prodotti di salumeria come panini per i vostri pic-nic o eventuali snack adatti alle vostre attività ricreative tutto a un prezzo perfettamente accessibile; abbiamo anche prodotti provenienti dall'Ucraina, Polonia, Moldavia e Romania. Il luogo è semplice da raggiungere e lo staff è molto accogliente e disponibile. Venite a trovarci! "
+        aboutUs: "Mini Market è una piccola attività locale situata nel cuore della bellissima Sorrento. Il negozio è gestito da uno staff diligente che mette al primo posto il cliente, dando la priorità alla qualità dei prodotti e alla convenienza dei prezzi. Abbiamo una larga scelta di prodotti, tra bevande durante le più calde giornate estive oppure prodotti di salumeria come panini per i vostri pic-nic o eventuali snack adatti alle vostre attività ricreative tutto a un prezzo perfettamente accessibile; abbiamo anche prodotti provenienti dall'Ucraina, Polonia, Moldavia e Romania. Il luogo è semplice da raggiungere e lo staff è molto accogliente e disponibile. Venite a trovarci! ",
+        prodottiEsteri2: "Il nostro negozio è uno dei pochissimi altri che ha tra i suoi prodotti anche merci provenienti da paesi esteri. Offriamo prodotti provenienti da: Romania, Polonia, Ucraina, Moldavia e altri ancora. Specialità non facilmente reperibili qui in Italia che sicuramente vale la pena di provare, anche solo una volta per semplice curiosità. I cibi del mondo sono alla vostra portata qui da Minimarket da Mary."
     },
     inglese: {
         chiSiamo: "About us",
@@ -32,7 +33,8 @@ const pagina = {
         telefonoFooter: "Phone number",
         emailFooter: "Email",
         socialMediaFooter: "Social media",
-        aboutUs: "Mini Market is a small local business located in the heart of beautiful Sorrento. The store is managed by a hard working staff who is really concerned with the customer's satisfaction, giving priority to product quality and affordable prices. We have a wide choice of products, including drinks during the hottest summer days or delicatessen products such as sandwiches for your picnics or any snacks suitable for your recreational activities, all at a perfectly accessible price; we also have products from Ukraine, Poland, Moldova and Romania. The place is easy to reach and the staff is welcoming and helpful. Come pay us a visit!"
+        aboutUs: "Mini Market is a small local business located in the heart of beautiful Sorrento. The store is managed by a hard working staff who is really concerned with the customer's satisfaction, giving priority to product quality and affordable prices. We have a wide choice of products, including drinks during the hottest summer days or delicatessen products such as sandwiches for your picnics or any snacks suitable for your recreational activities, all at a perfectly accessible price; we also have products from Ukraine, Poland, Moldova and Romania. The place is easy to reach and the staff is welcoming and helpful. Come pay us a visit!",
+        prodottiEsteri2: "Our market is one of the few stores to have many foreign products of different kinds. Most of the products we offer come from: Romania, Poland, Ukraine and Moldova, but we also have products coming from other countries. We have many specialties that are hard to find in Italy, and that are definitely worth trying. The foods of the world are here, ready to be tasted, in Minimarket da Mary."
     },
     russo: {
         chiSiamo: "О нас",
@@ -49,7 +51,8 @@ const pagina = {
         telefonoFooter: "наш номер телефона",
         emailFooter: "наш адрес эл.почты",
         socialMediaFooter: "Social media",
-        aboutUs: "Мини-маркет, это маленький местный бусинесс, расположен в центр Сорренты. Наш персонал - трудолюбивый, и удовлетворение клиента наш приоритет. У нас есть широкий выбор продукции, как напитки, мясо, боутерброды, все по доступной цене; у нас есть продукции из Украины, Польши, Румынии и Молдовы. Добраться до нас легко, мы будем вам ждать!"
+        aboutUs: "Мини-маркет, это маленький местный бусинесс, расположен в центр Сорренты. Наш персонал - трудолюбивый, и удовлетворение клиента наш приоритет. У нас есть широкий выбор продукции, как напитки, мясо, боутерброды, все по доступной цене; у нас есть продукции из Украины, Польши, Румынии и Молдовы. Добраться до нас легко, мы будем вам ждать!",
+        prodottiEsteri2: "Наш магазин, один из немногих который иметь продукции из многих зарубежных странах. В частности, у нас есть продукции из: Молдовы, Украины, Румынии, Польши и так далее. Приходите  и попробуйте наши зарубежные продукци, мы будем вам ждать!"
     },
     ucraino: {
         chiSiamo: "Про нас",
@@ -66,7 +69,8 @@ const pagina = {
         telefonoFooter: "наш номер телефону",
         emailFooter: "наша адреса эл.пошти",
         socialMediaFooter: "Social media",
-        aboutUs: "Міні-маркет, це маленький місцевий бусінес, розташований у центрі Сорренти. Наш персонал - працелюбний, і задоволення клієнта є наш пріоритет. Ми маємо широкий вибір продукції, як напої, м'ясо, боутерброди, все за доступною ціною; у нас є продукції з України, Польщі, Румунії та Молдови. Дістатись до нас легко, ми будемо вам чекати!"
+        aboutUs: "Міні-маркет, це маленький місцевий бусінес, розташований у центрі Сорренти. Наш персонал - працелюбний, і задоволення клієнта є наш пріоритет. Ми маємо широкий вибір продукції, як напої, м'ясо, боутерброди, все за доступною ціною; у нас є продукції з України, Польщі, Румунії та Молдови. Дістатись до нас легко, ми будемо вам чекати!",
+        prodottiEsteri2: "Наш магазин, один з небагатьох що мати продукцію з багатьох зарубіжних країн. Зокрема, ми маємо продукцію з: Молдови, України, Румунії, Польщі і так далі. Приходьте та спробуйте наші зарубіжні продукції, ми будемо на вас чекати!"
     },
 }
 
