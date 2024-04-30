@@ -49,6 +49,9 @@
 	margin-left: 4vw;
 	margin-right: 4vw;
 	margin-bottom: -40px;
+	text-shadow: 
+        0.2px 0.2px 0 black,
+        -0.2px -0.2px 0 black;
 }
 
 @keyframes slide-show{
