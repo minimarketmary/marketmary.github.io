@@ -16,10 +16,10 @@
 #carousel-bouton-gauche {
     display: none;
     position: relative;
-    left: -1%;
+    left: 2.9%;
     top: 10%;
     transform: translate(-50%, -50%);
-    width: 6%;
+    width: 10%;
     aspect-ratio: 1/1;
 }
 
@@ -29,22 +29,22 @@
     left: 5%;
     top: 10%;
     transform: translate(-50%, -50%);
-    width: 6%;
+    width: 10%;
     aspect-ratio: 1/1;
-
 }
 
-/* Styles pour les écrans de petite taille (largeur maximale de 800px) */
 @media screen and (max-width: 800px) {
-    .carousel-item {
-        width: 80%;
-    }
+    .imageContainerAboutUs{
+		padding-left: 0;
+	}
+}
 
-    #carousel-bouton-droite {
-        left: 94%;
-    }
+@media (max-width:1200px) {		
+	#carousel-bouton-gauche {
+		transform: translate(-50%, 0%);
+	}
 
-    #carousel-bouton-gauche {
-        left: 5%;
-    }
+	#carousel-bouton-droite {
+		transform: translate(-50%, 0%);		
+	}
 }
